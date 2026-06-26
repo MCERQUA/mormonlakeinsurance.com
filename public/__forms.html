@@ -1,0 +1,27 @@
+<!--
+  Static form definitions for Netlify build-time form detection (SPA pattern).
+  Served at /__forms.html. The real forms live inside Next.js React client
+  components which Netlify's crawler cannot parse, so these plain-HTML stubs
+  register the forms (+ their named fields) at build time.
+-->
+<form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="quote" />
+  <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+  <input name="name" />
+  <input name="email" />
+  <input name="phone" />
+  <input name="propertyType" />
+  <input name="propertyUse" />
+  <input name="coverageNeeded" />
+  <input name="state" />
+  <textarea name="message"></textarea>
+</form>
+
+<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="contact" />
+  <p hidden><label>Don't fill this out: <input name="bot-field" /></label></p>
+  <input name="name" />
+  <input name="email" />
+  <input name="phone" />
+  <textarea name="message"></textarea>
+</form>
