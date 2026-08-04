@@ -16,6 +16,14 @@ const COVERAGE_OPTIONS = [
   "Vacant Property Insurance",
   "Outdoor Recreation Business",
   "Full Package",
+  "Commercial — General Liability",
+  "Commercial — Workers' Compensation",
+  "Commercial — Commercial Auto",
+  "Commercial — Builder's Risk / Tools & Equipment",
+  "Commercial — Surety Bond",
+  "Commercial — Umbrella / Excess Liability",
+  "Commercial — Business Owner's Policy (BOP)",
+  "Commercial — Full Program",
 ];
 
 export default function QuotePage() {
