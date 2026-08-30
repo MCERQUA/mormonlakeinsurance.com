@@ -72,7 +72,7 @@ export function Hero() {
           <FadeIn delay={0.1} direction="left" className="relative h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
               src="/images/hero-mormonlake.jpg"
-              alt="Mountain cabin at Mormon Lake in the Coconino National Forest"
+              alt="Ponderosa pine meadow at Mormon Lake under a golden sunset sky"
               fill
               className="object-cover"
               priority
