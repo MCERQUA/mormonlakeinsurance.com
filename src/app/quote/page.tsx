@@ -23,7 +23,9 @@ export default function QuotePage() {
     name: "", email: "", phone: "", propertyType: "",
     propertyUse: "", coverageNeeded: "", state: "", message: "",
     property_street_address: "", city: "", zip: "", mailing_address: "",
-    date_of_birth: "", current_policy_number: "", current_policy_expiration_date: "",
+    date_of_birth: "", drivers_license_number: "", current_carrier_name: "",
+    current_policy_number: "", current_policy_expiration_date: "",
+    requested_effective_date: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -157,8 +159,11 @@ export default function QuotePage() {
                           {field("zip", "ZIP")}
                           {field("mailing_address", "Mailing Address (if different)", "text", false)}
                           {field("date_of_birth", "Date of Birth", "date", false)}
+                          {field("drivers_license_number", "Driver License Number", "text", false)}
+                          {field("current_carrier_name", "Current Carrier", "text", false)}
                           {field("current_policy_number", "Current Policy Number", "text", false)}
                           {field("current_policy_expiration_date", "Current Policy Expiration", "date", false)}
+                          {field("requested_effective_date", "Requested Effective Date", "date", false)}
                         </div>
 
                         <div>
