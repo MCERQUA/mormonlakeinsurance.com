@@ -22,6 +22,8 @@ export default function QuotePage() {
   const [formData, setFormData] = useState({
     name: "", email: "", phone: "", propertyType: "",
     propertyUse: "", coverageNeeded: "", state: "", message: "",
+    property_street_address: "", city: "", zip: "", mailing_address: "",
+    date_of_birth: "", current_policy_number: "", current_policy_expiration_date: "",
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -149,6 +151,14 @@ export default function QuotePage() {
                             "Business",
                           ])}
                           {select("coverageNeeded", "Coverage Needed", COVERAGE_OPTIONS)}
+                          {field("property_street_address", "Property Street Address")}
+                          {field("city", "City")}
+                          {field("state", "State")}
+                          {field("zip", "ZIP")}
+                          {field("mailing_address", "Mailing Address (if different)", "text", false)}
+                          {field("date_of_birth", "Date of Birth", "date", false)}
+                          {field("current_policy_number", "Current Policy Number", "text", false)}
+                          {field("current_policy_expiration_date", "Current Policy Expiration", "date", false)}
                         </div>
 
                         <div>
