@@ -2,7 +2,7 @@ export const SITE = {
   name: "Mormon Lake Insurance",
   domain: "mormonlakeinsurance.com",
   url: "https://mormonlakeinsurance.com",
-  tagline: "Insurance for Mormon Lake, AZ — Cabins, Homes, Auto & Recreation",
+  tagline: "Personal & Commercial Insurance — Mormon Lake, AZ",
   description:
     "Independent insurance agency serving Mormon Lake, AZ and Northern Arizona's mountain communities. Coverage for cabins, second homes, auto, recreational vehicles, and property in the Coconino National Forest area. Free quotes from 12+ carriers.",
   phone: "844-967-5247",
@@ -553,6 +553,7 @@ export const CREDENTIALS = [
 
 export const NAV_LINKS = [
   { label: "Services", href: "/services" },
+  { label: "Commercial", href: "/commercial" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Service Area", href: "/service-area" },
